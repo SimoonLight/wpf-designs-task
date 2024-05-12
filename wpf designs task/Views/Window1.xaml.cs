@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,16 +17,15 @@ namespace wpf_designs_task.Views
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window,INotifyPropertyChanged
+    public partial class Window1 : Window
     {
-        //public string? username_
-        //{
-        //    get { return (string)GetValue(username_Property); }
-        //    set { SetValue(username_Property, value); }
-        //}
-        //public static readonly DependencyProperty username_Property =
-        //    DependencyProperty.Register("username_", typeof(string), typeof(Window1));
-        public string? username_ { get => username_1; set { username_1 = value; OnPropertyChanged(); } }
+        public string? username_
+        {
+            get { return (string)GetValue(username_Property); }
+            set { SetValue(username_Property, value); }
+        }
+        public static readonly DependencyProperty username_Property =
+            DependencyProperty.Register("username_", typeof(string), typeof(Window1));
 
         public string? password_
         {
@@ -37,13 +34,7 @@ namespace wpf_designs_task.Views
         }
         public static readonly DependencyProperty password_Property =
             DependencyProperty.Register("password_", typeof(string), typeof(Window1));
-        private string? username_1;
 
-        public event PropertyChangedEventHandler? PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName]string? propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
 
         public Window1()
         {
@@ -87,7 +78,6 @@ namespace wpf_designs_task.Views
 
         private void username_txtbox_LostFocus(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(username_);
             if (username_=="")
             {
                 username_ = "enter your username";

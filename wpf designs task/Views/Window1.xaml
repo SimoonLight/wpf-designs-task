@@ -30,7 +30,7 @@
                  HorizontalContentAlignment="Center" Height="40" Width="380"
                  BorderThickness="0" BorderBrush="Transparent" Foreground="#E5F3FD"
                  PreviewMouseDown="username_txtbox_PreviewMouseDown"
-                 LostFocus="username_txtbox_LostFocus" Text="{Binding username_}"/>
+                 LostFocus="username_txtbox_LostFocus" Text="{Binding username_}"></TextBox>
 
         <Label Content="password" HorizontalAlignment="Center" VerticalAlignment="Center"
                FontSize="25" FontFamily="Bold" Foreground="#131E3A" Grid.Row="4" Name="password_lbl"></Label>

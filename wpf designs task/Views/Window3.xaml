@@ -1,0 +1,124 @@
+﻿<Window x:Class="wpf_designs_task.Views.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_designs_task.Views"
+        mc:Ignorable="d"
+        Title="New Client" Name="Window_1" Height="800" Width="400" MaxHeight="800" MaxWidth="450">
+
+    <Grid Background="#E5F3FD">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="clients"  Foreground="#131E3A" FontSize="20" Grid.Column="0"
+                   VerticalAlignment="Stretch" HorizontalAlignment="Left"
+                   FontFamily="Bold"></Label>
+
+            <Label Content="home"  Foreground="#131E3A" FontSize="20" Grid.Column="1"
+                   VerticalAlignment="Stretch" HorizontalAlignment="Right"
+                   FontFamily="Bold"></Label>
+
+        </Grid>
+
+        <Label Content="Name" Grid.Row="1" Foreground="#131E3A"
+               FontSize="17"></Label>
+
+        <TextBox Grid.Row="2" Height="45" Width="387"
+                 VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+                 Foreground="#E5F3FD" Text="   What is the name of the client?"></TextBox>
+
+        <Label Content="Surname" Grid.Row="3" Foreground="#131E3A"
+       FontSize="17"></Label>
+
+        <TextBox Grid.Row="4" Height="45" Width="387"
+            VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+            Foreground="#E5F3FD" Text="   What is the surname of the client?"></TextBox>
+
+        <Label Content="Number" Grid.Row="5" Foreground="#131E3A"
+       FontSize="17"></Label>
+
+        <TextBox Grid.Row="6" Height="45" Width="387"
+    VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+    Foreground="#E5F3FD" Text="   What is the number of the client?"></TextBox>
+
+        <Label Content="Company" Grid.Row="7" Foreground="#131E3A"
+FontSize="17"></Label>
+
+        <TextBox Grid.Row="8" Height="45" Width="387"
+VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+Foreground="#E5F3FD" Text="   Whitch company does the person belong for?"></TextBox>
+
+        <Label Content="Place" Grid.Row="9" Foreground="#131E3A"
+FontSize="17"></Label>
+
+        <TextBox Grid.Row="10" Height="45" Width="387"
+VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+Foreground="#E5F3FD" Text="   Where did he/she lound me?"></TextBox>
+
+        <Label Content="Registration date" Grid.Row="11" Foreground="#131E3A"
+FontSize="17"></Label>
+
+        <Grid Grid.Row="12">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Height="45" Width="115" Text="Day"
+                     Foreground="#E5F3FD" VerticalContentAlignment="Center"
+                     HorizontalContentAlignment="Center" Grid.Column="0"></TextBox>
+
+            <TextBox Height="45" Width="115" Text="Month"
+         Foreground="#E5F3FD" VerticalContentAlignment="Center"
+         HorizontalContentAlignment="Center" Grid.Column="1"></TextBox>
+
+            <TextBox Height="45" Width="115" Text="Year"
+         Foreground="#E5F3FD" VerticalContentAlignment="Center"
+         HorizontalContentAlignment="Center" Grid.Column="2"></TextBox>
+
+        </Grid>
+
+        <Label Content="How do i know him/her" Grid.Row="13" Foreground="#131E3A"
+FontSize="17"></Label>
+
+        <TextBox Grid.Row="14" Height="45" Width="387"
+VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+Foreground="#E5F3FD" Text="   Write how do you know him/her"></TextBox>
+
+        <Button Background="#131E3A" Grid.Row="15" Height="65" Width="380"
+        Foreground="White" FontSize="19" HorizontalContentAlignment="Center"
+        VerticalAlignment="Bottom">register</Button>
+
+        <Label VerticalAlignment="Bottom" HorizontalAlignment="Center"
+        Grid.Row="16" Foreground="#131E3A">Praycly creaced by Tunar Abuzar in 2021</Label>
+
+    </Grid>
+</Window>

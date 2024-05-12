@@ -1,0 +1,53 @@
+﻿<Window x:Class="wpf_designs_task.Views.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_designs_task.Views"
+        mc:Ignorable="d"
+        Title="New Client" Name="Window_1" Height="800" Width="400" MaxHeight="800" MaxWidth="450">
+    <Grid Background="#E5F3FD">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="clients" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="55" FontFamily="Bold" Foreground="#131E3A" Grid.Row="0" Name="clients_lbl"></Label>
+
+        <Label Content="username" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="25" FontFamily="Bold" Foreground="#131E3A" Grid.Row="2" Name="username_lbl"></Label>
+
+        <TextBox Name="username_txtbox" 
+                 Grid.Row="3" Background="white" VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Center" Height="40" Width="380"
+                 BorderThickness="0" BorderBrush="Transparent" Foreground="#E5F3FD"
+                 PreviewMouseDown="username_txtbox_PreviewMouseDown"
+                 LostFocus="username_txtbox_LostFocus" Text="{Binding username_}"/>
+
+        <Label Content="password" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="25" FontFamily="Bold" Foreground="#131E3A" Grid.Row="4" Name="password_lbl"></Label>
+
+        <TextBox Name="password_txtbox" 
+                 Grid.Row="5" Background="white" VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Center" Height="40" Width="380"
+                 BorderThickness="0" BorderBrush="Transparent" Foreground="#E5F3FD"
+                 LostFocus="password_txtbox_LostFocus"
+                 PreviewMouseDown="password_txtbox_PreviewMouseDown" Text="{Binding password_}"></TextBox>
+
+        <Button Background="#131E3A" Name="login_btn" Grid.Row="6" Height="65" Width="380"
+                Foreground="White" FontSize="19" HorizontalContentAlignment="Center"
+                VerticalAlignment="Bottom" Click="login_btn_Click" >log in</Button>
+
+        <Label VerticalAlignment="Bottom" HorizontalAlignment="Center"
+               Grid.Row="7" Foreground="#131E3A">Praycly creaced by Tunar Abuzar in 2021</Label>
+
+    </Grid>
+</Window>

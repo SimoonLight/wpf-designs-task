@@ -1,0 +1,35 @@
+﻿<Window x:Class="wpf_designs_task.Views.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_designs_task.Views"
+        mc:Ignorable="d"
+         Title="Home" Name="Window_1" Height="800" Width="400" MaxHeight="800" MaxWidth="450">
+    <Grid Background="#E5F3FD">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="clients" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+       FontSize="45" FontFamily="Bold" Foreground="#131E3A" Grid.Row="0" Name="clients_lbl"></Label>
+
+        <Label Content="Welcome Tunar!" Grid.Row="1" HorizontalAlignment="Center" 
+               VerticalAlignment="Stretch" FontSize="20" Foreground="Blue"></Label>
+
+        <Button Content="create new client" Grid.Row="2" Height="200" Width="370"
+                FontSize="38" Foreground="White" Background="#131E3A"></Button>
+
+        <Button Content="all clients" Grid.Row="3" Height="200" Width="370"
+        FontSize="38" Foreground="White" Background="#131E3A" VerticalAlignment="Top"></Button>
+
+        <Label Content="Prayclly creched by Tunar Abuzar in 2021" Grid.Row="4"
+               HorizontalContentAlignment="Center" Foreground="#131E3A"></Label>
+
+    </Grid>
+</Window>
